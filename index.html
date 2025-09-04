@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raquel — Video Editor</title>
+  <meta name="description" content="Raquel Serrano — Video editor, content creator, virtual assistant." />
+  <!-- Tailwind via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config for colors
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#0a0a0a",
+            card: "#121212",
+            text: "#f5f5f5",
+            subtext: "#b3b3b3",
+            accent: "#ff7a00",
+            accent2: "#ffd60a",
+            border: "#222"
+          },
+          borderColor: { border: "#222" }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background:#0a0a0a; color:#f5f5f5; }
+    .card { background:#121212; border-color:#222; }
+    .badge { background:#1a1a1a; border:1px solid #222; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-border/100" style="background:rgba(10,10,10,0.8);backdrop-filter:saturate(180%) blur(8px);">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 md:px-8">
+      <div class="flex items-center gap-3">
+        <div class="grid h-9 w-9 place-items-center rounded-2xl" style="background:linear-gradient(135deg,#ff7a00 0%,#ffd60a 100%);">
+          <span class="text-sm font-semibold text-black">R</span>
+        </div>
+        <span class="text-base tracking-wide text-white/90">Raquel • Video Editor</span>
+      </div>
+      <nav class="hidden gap-1 md:flex">
+        <a href="#home" class="px-4 py-2 text-sm text-white/70 hover:text-white">Home</a>
+        <a href="#portfolio" class="px-4 py-2 text-sm text-white/70 hover:text-white">Portfolio</a>
+        <a href="#about" class="px-4 py-2 text-sm text-white/70 hover:text-white">About</a>
+        <a href="#contact" class="px-4 py-2 text-sm text-white/70 hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
+    <!-- Hero -->
+    <section id="home" class="grid gap-8 pt-8 md:grid-cols-[1.15fr_.85fr] md:items-center py-12 md:py-16">
+      <div>
+        <h1 class="text-3xl leading-tight md:text-5xl">Minimal. Precise. Story-first.</h1>
+        <p class="mt-3 max-w-xl text-white/70">
+          I craft scroll-stopping edits for brands and creators. Clean cuts, bold pacing, and a focus on what matters: the video.
+        </p>
+        <p class="mt-4 max-w-2xl text-white/80">
+          Hi there! I’m Raquel — a video editor, content creator, and virtual assistant with over 7 years of experience producing engaging, high-quality videos.
+          I’ve worked on a wide range of projects, including e-commerce, marketing, vlogs, and storytelling, always adding a creative, viral-ready touch.
+          I’d love to help bring your vision to life and make sure your content connects with your audience.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#portfolio" class="rounded-xl px-5 py-2 text-sm font-medium" style="background:#ff7a00;color:#111;">See work</a>
+          <a href="#contact" class="rounded-xl border px-5 py-2 text-sm font-medium" style="border-color:#222;color:#f5f5f5;">Hire me</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] w-full overflow-hidden rounded-2xl border card">
+          <img src="/pictures/raquel.jpeg" alt="Raquel portrait" class="h-full w-full object-cover" loading="eager" />
+        </div>
+        <div class="pointer-events-none absolute -right-3 -top-3 select-none rounded-xl px-2 py-1 text-xs font-medium" style="background:#ffd60a;color:#111;">
+          Modern • Minimal • Bold
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section id="portfolio" class="mt-12">
+      <div>
+        <span class="text-xs tracking-widest" style="color:#ffd60a;">Featured</span>
+        <h2 class="mt-1 text-2xl md:text-3xl">High-impact edits</h2>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <!-- Cards (links + view counts) -->
+        <a href="https://vm.tiktok.com/ZMkVa7Ynd/" target="_blank" class="group block overflow-hidden rounded-2xl border card hover:-translate-y-0.5 transition">
+          <div class="flex h-48 items-center justify-center">
+            <div class="badge flex items-center gap-2 rounded-full px-3 py-2 text-xs">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffd60a" aria-hidden><path d="M8 5v14l11-7z" /></svg>
+              <span class="text-white/80">Open on TikTok</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border-t px-4 py-3 text-sm" style="border-color:#222;">
+            <div class="min-w-0">
+              <div class="truncate font-medium">Spanish eCom video</div>
+              <div class="truncate text-white/60">TikTok</div>
+            </div>
+            <span class="shrink-0 rounded-full px-2 py-1 text-xs" style="background:#1f1f1f;color:#ffd60a;">+2M views</span>
+          </div>
+        </a>
+
+        <a href="https://vm.tiktok.com/ZMkVmejJH/" target="_blank" class="group block overflow-hidden rounded-2xl border card hover:-translate-y-0.5 transition">
+          <div class="flex h-48 items-center justify-center">
+            <div class="badge flex items-center gap-2 rounded-full px-3 py-2 text-xs">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffd60a" aria-hidden><path d="M8 5v14l11-7z" /></svg>
+              <span class="text-white/80">Open on TikTok</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border-t px-4 py-3 text-sm" style="border-color:#222;">
+            <div class="min-w-0">
+              <div class="truncate font-medium">Spanish eCom video</div>
+              <div class="truncate text-white/60">TikTok</div>
+            </div>
+            <span class="shrink-0 rounded-full px-2 py-1 text-xs" style="background:#1f1f1f;color:#ffd60a;">+500K views</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DFSyFtbxjc3/?igsh=bWs4MXdqOHFnOWtl" target="_blank" class="group block overflow-hidden rounded-2xl border card hover:-translate-y-0.5 transition">
+          <div class="flex h-48 items-center justify-center">
+            <div class="badge flex items-center gap-2 rounded-full px-3 py-2 text-xs">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffd60a" aria-hidden><path d="M8 5v14l11-7z" /></svg>
+              <span class="text-white/80">Open on Instagram</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border-t px-4 py-3 text-sm" style="border-color:#222;">
+            <div class="min-w-0">
+              <div class="truncate font-medium">Spanish funny vlog</div>
+              <div class="truncate text-white/60">Instagram</div>
+            </div>
+            <span class="shrink-0 rounded-full px-2 py-1 text-xs" style="background:#1f1f1f;color:#ffd60a;">+350K views</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Playable embeds -->
+      <div class="mt-10">
+        <h3 class="text-lg">Playable embeds</h3>
+        <p class="mt-1 text-sm text-white/60">Watch directly on this page.</p>
+        <div class="mt-4 grid gap-6 md:grid-cols-2">
+          <blockquote class="tiktok-embed" cite="https://vm.tiktok.com/ZMkVa7Ynd/" style="max-width:605px;min-width:325px;">
+            <section><a href="https://vm.tiktok.com/ZMkVa7Ynd/" target="_blank" class="underline text-white/80">Watch on TikTok</a></section>
+          </blockquote>
+
+          <blockquote class="tiktok-embed" cite="https://vm.tiktok.com/ZMkVmejJH/" style="max-width:605px;min-width:325px;">
+            <section><a href="https://vm.tiktok.com/ZMkVmejJH/" target="_blank" class="underline text-white/80">Watch on TikTok</a></section>
+          </blockquote>
+
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFSyFtbxjc3/?igsh=bWs4MXdqOHFnOWtl" data-instgrm-version="14" style="background:#121212;border-radius:16px;margin:0;padding:0;">
+            <a href="https://www.instagram.com/reel/DFSyFtbxjc3/?igsh=bWs4MXdqOHFnOWtl" target="_blank" class="underline text-white/80">Watch on Instagram</a>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="mt-10 flex items-center justify-between">
+        <span class="text-sm text-white/60">More work below</span>
+        <a href="https://drive.google.com/drive/folders/1GILSM6nAkAJEdyhBjLNwZs77PyC1T2eO?usp=drive_link" target="_blank" class="rounded-xl border px-4 py-2 text-sm hover:bg-white/5" style="border-color:#222;">View Google Drive folder</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-16">
+      <div>
+        <span class="text-xs tracking-widest" style="color:#ffd60a;">About</span>
+        <h2 class="mt-1 text-2xl md:text-3xl">Who I am</h2>
+      </div>
+      <div class="mt-6 grid items-start gap-8 md:grid-cols-[1fr_1.2fr]">
+        <div class="rounded-2xl border card p-6">
+          <div class="h-40 w-40 overflow-hidden rounded-xl bg-white/5">
+            <img src="/pictures/headshot.png" alt="Raquel headshot" class="h-full w-full object-cover" />
+          </div>
+          <p class="mt-4 text-sm text-white/70">
+            I’m Raquel, a video editor with 7+ years creating engaging content for brands and creators. My style is minimal and modern:
+            clean cuts, strong pacing, on-brand typography, and punchy sound design.
+          </p>
+          <ul class="mt-4 grid gap-2 text-sm text-white/80">
+            <li>• Short-form UGC / e-commerce ads</li>
+            <li>• YouTube & vlog storytelling</li>
+            <li>• Social packages for launches</li>
+            <li>• Spanish & English workflows</li>
+          </ul>
+        </div>
+        <div>
+          <div class="grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border card p-4 text-center">
+              <div class="text-xl" style="color:#ffd60a;">3M+</div>
+              <div class="mt-1 text-xs text-white/60">Total views across edits</div>
+            </div>
+            <div class="rounded-2xl border card p-4 text-center">
+              <div class="text-xl" style="color:#ffd60a;">48–72h</div>
+              <div class="mt-1 text-xs text-white/60">Turnaround</div>
+            </div>
+            <div class="rounded-2xl border card p-4 text-center">
+              <div class="text-xl" style="color:#ffd60a;">ES / EN</div>
+              <div class="mt-1 text-xs text-white/60">Languages</div>
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border card p-5">
+              <div class="text-sm" style="color:#ffd60a;">Editing stack</div>
+              <ul class="mt-2 text-sm text-white/80"><li>• Premiere Pro</li><li>• After Effects</li><li>• CapCut</li><li>• DaVinci Resolve</li></ul>
+            </div>
+            <div class="rounded-2xl border card p-5">
+              <div class="text-sm" style="color:#ffd60a;">Delivery</div>
+              <ul class="mt-2 text-sm text-white/80"><li>• Reels / Shorts</li><li>• 9:16 • 1:1 • 16:9</li><li>• Color-corrected</li><li>• Captioned when needed</li></ul>
+            </div>
+            <div class="rounded-2xl border card p-5">
+              <div class="text-sm" style="color:#ffd60a;">Turnaround</div>
+              <ul class="mt-2 text-sm text-white/80"><li>• Fast iterations</li><li>• On-brand templates</li><li>• Clear feedback cycles</li></ul>
+            </div>
+            <div class="rounded-2xl border card p-5">
+              <div class="text-sm" style="color:#ffd60a;">Collab</div>
+              <ul class="mt-2 text-sm text-white/80"><li>• Drive links</li><li>• Frame-accurate notes</li><li>• Timezone-flexible</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16">
+      <div>
+        <span class="text-xs tracking-widest" style="color:#ffd60a;">Contact</span>
+        <h2 class="mt-1 text-2xl md:text-3xl">Let’s work together</h2>
+      </div>
+
+      <div class="mt-6 rounded-2xl border card p-6">
+        <p class="text-sm text-white/70">Prefer email or socials? Choose an option below.</p>
+        <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <a href="mailto:serranocastillo.raquel@gmail.com" class="flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium hover:bg-white/5 border" style="border-color:#222;">Email</a>
+          <a href="https://www.instagram.com/lareixhel?igsh=MTY0cnVvNXp1NGwyYw%3D%3D&utm_source=qr" target="_blank" class="flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium hover:bg-white/5 border" style="border-color:#222;">Instagram @lareixhel</a>
+          <a href="https://www.upwork.com/freelancers/~016e636dc76799e29a" target="_blank" class="flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium hover:bg-white/5 border" style="border-color:#222;">Upwork Profile</a>
+          <a href="https://drive.google.com/drive/folders/1GILSM6nAkAJEdyhBjLNwZs77PyC1T2eO?usp=drive_link" target="_blank" class="flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium hover:bg-white/5 border" style="border-color:#222;">Portfolio (Google Drive)</a>
+        </div>
+        <ul class="mt-6 grid gap-2 text-sm text-white/70">
+          <li>• Email: serranocastillo.raquel@gmail.com</li>
+          <li>• Instagram: @lareixhel</li>
+          <li>• Upwork: Freelance profile</li>
+          <li>• Location: Remote / Worldwide</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t py-8 text-center text-xs text-white/50" style="border-color:#222;">
+    © <span id="year"></span> Raquel — Video Editor. Built with love and clean cuts.
+  </footer>
+
+  <!-- Embeds -->
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script async src="https://www.instagram.com/embed.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
